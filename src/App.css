@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #828282;
+}
+
+a:hover {
+  color: #2a7b43;
+}
+
+.product-item {
+  display: none;
+}
+
+.product:hover .product-item {
+  display: block;
+}
+
+/* logo */
+.logo {
+  margin-left: 8px;
+}
+
+.letter {
+  transition: 0.2s;
+  transform: translateX(0);
+  cursor: grab;
+}
+
+.letter:hover {
+  transform: translateY(-0.5rem);
+}
+
+.logo .letter {
+  color: #474646;
+  font-size: 30px;
+  background: -webkit-linear-gradient(120deg, hsl(107, 80%, 60%), hsl(68, 68%, 58%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lua {
+  width: 150px;
+  position: absolute;
+  right: 22%;
+}
+
+.hc:hover {
+  box-shadow: 1px -0.5px 10px #2a7b43;
+  cursor: pointer;
+}
+
+.image-container {
+
+  height: 570px;
+  background: url('https://theme.hstatic.net/200000781541/1001126077/14/slideshow_1.jpg?v=106') no-repeat center;
+  background-size: contain;
+
+}
+
+.category p.active {
+  color: red;
+  font-weight: bold;
+}
+
+.category p {
+  cursor: pointer;
+
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.circle {
+  border: 2px solid #82d461 !important;
+  position: absolute;
+  border-radius: 92% 110% 132% 88%;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+}
+
+.circle:nth-child(1) {
+
+
+  animation: spin1 6s linear infinite;
+}
+
+@keyframes spin1 {
+  0% {
+
+    transform: rotate(0);
+  }
+
+  100% {
+
+    transform: rotate(360deg);
+  }
+}
+
+.new-child {
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.new-child:hover {
+
+  box-shadow: 0 8px 15px rgba(112, 112, 112, 0.2);
+
+}
