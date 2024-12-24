@@ -39,6 +39,10 @@
   }
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: #828282;
@@ -154,4 +158,204 @@ a:hover {
 
   box-shadow: 0 8px 15px rgba(112, 112, 112, 0.2);
 
+}
+
+/* search */
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: transform 1s ease, opacity 0.5s ease;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.search-container:hover .search-box {
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #1aa623;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #037918;
+}
+
+/* user */
+.user-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.user-box {
+  position: absolute;
+  top: 22px;
+  /* Đẩy khung xuống dưới icon */
+  right: 0;
+  width: 200px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.user-container:hover .user-box {
+  opacity: 1;
+  z-index: 1000;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.user-box p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.user-box ul li {
+  margin: 5px 0;
+}
+
+.user-box ul li a {
+  text-decoration: none;
+  color: #868686;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.user-box ul li a:hover {
+  color: #05742e;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+/* product */
+.darkened-div {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: url('https://theme.hstatic.net/1000271724/1000376256/14/breacrumb_banner.jpg?v=88') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* Màu chữ trắng để nổi bật */
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Màu đen với độ mờ 50% */
+  z-index: 1;
+  /* Đảm bảo overlay nằm trên background */
+}
+
+.darkened-div p,
+.darkened-div h4 {
+  position: relative;
+  z-index: 2;
+  /* Đảm bảo chữ nằm trên overlay */
+}
+
+.category li {
+  margin-top: 8px;
+}
+
+.active {
+  color: rgb(15, 154, 52);
+
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.hover-actions {
+  position: absolute;
+  bottom: 70px;
+  left: 20%;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+
+.product-card:hover .hover-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-card .hover-actions button:hover {
+  background-color: #fff;
+  color: green;
 }

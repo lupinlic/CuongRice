@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -23,43 +24,54 @@ function Header() {
 
                     </div>
                     <div className='col-md-6'>
-                        <ul className="list-inline d-flex justify-content-between">
+                        <ul className="list-inline d-flex justify-content-between m-0">
                             <li className='list-inline-item'>
-                                <Link to="/Introduce">Giới thiệu về CuongRICE </Link>
+                                <NavLink to="/Introduce">Giới thiệu về CuongRICE </NavLink>
                             </li>
                             <li className='list-inline-item'>
-                                <Link to="/">Trang chủ</Link>
+                                <NavLink to="/">Trang chủ</NavLink>
                             </li>
-                            <li className='list-inline-item product'>
-                                <Link to="/Product">Sản phẩm</Link>
-                                <ul className='list-group position-absolute product-item z-1'>
-                                    <li className='list-group-item'>
-                                        <Link to='#'>Gạo</Link>
-                                    </li>
-                                    <li className='list-group-item'>
-                                        <Link to='#'>Rau củ, quả</Link>
-                                    </li>
-                                    <li className='list-group-item'>
-                                        <Link to='#'>Combo</Link>
-                                    </li>
-                                </ul>
+                            <li className='list-inline-item product user-container'>
+                                <NavLink to="/Product">Sản phẩm</NavLink>
+                                <div className="user-box">
+                                    <ul>
+                                        <li><Link to='#'>Gạo</Link></li>
+                                        <li><Link to='#'>Rau củ, quả</Link></li>
+                                        <li><Link to=''>Combo</Link></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li className='list-inline-item'>
-                                <Link to="#">Blog</Link>
+                                <NavLink to="/Blog">Blog</NavLink>
                             </li>
                         </ul>
                     </div>
                     <div className='col-md-2 row'>
-                        <div className='col-md-6'></div>
-                        <div className="position-relative col-md-3">
-                            <i className="fas fa-shopping-cart fa-2x" style={{ fontSize: '20px', color: '#828282' }} />
-                            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                        <div className='col-md-6 text-end search-container'>
+                            <i style={{ fontSize: '20px', color: '#828282' }} class="fas fa-search icon"></i>
+                            <div class="search-box">
+                                <input type="text" placeholder="Tìm kiếm..." />
+                                <button class="search-button">Tìm</button>
+                            </div>
+                        </div>
+                        <div className="position-relative col-md-4">
+                            <i className="fas fa-shopping-cart fa-2x icon" style={{ fontSize: '20px', color: '#828282' }} />
+                            <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger">
                                 3
                                 <span className="visually-hidden">số lượng sản phẩm</span>
                             </span>
                         </div>
-                        <div className='col-md-3'>
-                            <i style={{ fontSize: '20px', color: '#828282', marginLeft: '40px' }} class="fas fa-user fa-2x"></i>
+                        <div className='col-md-2 user-container'>
+                            <i style={{ fontSize: '20px', color: '#828282' }} class="fas fa-user icon"></i>
+                            <div className="user-box">
+                                <p>Chào mừng bạn!</p>
+                                <ul>
+                                    <li><a href="">Hồ sơ</a></li>
+                                    <li><a href="">Cài đặt</a></li>
+                                    <li><a href="">Đăng xuất</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

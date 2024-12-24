@@ -37,7 +37,7 @@ function Home() {
     return (
 
 
-        <div className='container-fluid main p-0' style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
+        <div className='container-fluid main p-0' style={{ backgroundColor: "rgba(0, 0, 0, 0.05)", overflow: 'hidden' }}>
             <div className='image-container fade-in'>
 
             </div>
