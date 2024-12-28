@@ -56,11 +56,13 @@ function Header() {
                             </div>
                         </div>
                         <div className="position-relative col-md-4">
-                            <i className="fas fa-shopping-cart fa-2x icon" style={{ fontSize: '20px', color: '#828282' }} />
-                            <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger">
-                                3
-                                <span className="visually-hidden">số lượng sản phẩm</span>
-                            </span>
+                            <Link to='/Cart'>
+                                <i className="fas fa-shopping-cart fa-2x icon" style={{ fontSize: '20px', color: '#828282' }} />
+                                <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger">
+                                    3
+                                    <span className="visually-hidden">số lượng sản phẩm</span>
+                                </span>
+                            </Link>
                         </div>
                         <div className='col-md-2 user-container'>
                             <i style={{ fontSize: '20px', color: '#828282' }} class="fas fa-user icon"></i>
