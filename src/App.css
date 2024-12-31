@@ -102,6 +102,31 @@ a:hover {
 
 }
 
+.tb_cart img {
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+
+    height: 150px;
+    background: url('https://theme.hstatic.net/200000781541/1001126077/14/slideshow_1.jpg?v=106') no-repeat center;
+    background-size: contain;
+
+  }
+
+  .tb_cart img {
+    height: 70px;
+  }
+
+  .tb_cart th,
+  td {
+    font-size: 14px;
+  }
+}
+
+
+
 .category p.active {
   color: red;
   font-weight: bold;
@@ -340,6 +365,7 @@ a:hover {
 
 .hover-actions {
   position: absolute;
+  display: flex;
   bottom: 100px;
   left: 20%;
   width: 100%;
@@ -433,4 +459,105 @@ a:hover {
 td {
   vertical-align: middle;
 
+}
+
+.address input,
+.address select {
+  border-radius: 5px;
+  height: 45px;
+  border: 1px solid #a4a4a4;
+  outline: none;
+  margin: 8px 0;
+}
+
+.address input:focus,
+.address select:focus {
+  border-color: #20bb1a;
+  /* Màu viền khi focus */
+  box-shadow: 0 0 5px rgba(9, 109, 56, 0.5);
+  /* Tạo hiệu ứng ánh sáng */
+}
+
+.thanks button {
+  margin: 12px;
+  border: none;
+  background-color: #1aa623;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+}
+
+.thanks button:hover {
+  background-color: #fff;
+  color: #1aa623;
+  border: 1px solid #1aa623;
+}
+
+/* zalo */
+.zalo-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0084ff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  animation: shake 1.5s infinite;
+  /* Thêm hiệu ứng lắc */
+}
+
+.zalo-button img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Keyframes cho hiệu ứng lắc */
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+.contact input {
+  width: 100%;
+  height: 35px;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: 0.5px solid #20bb1a;
+  outline: none;
+}
+
+.contact button {
+  width: 100%;
+  height: 40px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #20bb1a;
+  color: #fff;
+}
+
+.contact li {
+  font-size: 18px;
+  margin: 12px 0;
 }

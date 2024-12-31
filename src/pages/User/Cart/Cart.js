@@ -1,10 +1,17 @@
 import React from 'react'
 import Banner from '../../../components/shared/Banner/Banner'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 function Cart() {
     const [quantity, setQuantity] = useState(1);
+    const navigate = useNavigate();
+
+    const handleToCheckout = () => {
+        // Điều hướng đến trang giỏ hàng
+        navigate('/Checkout');
+    }
     return (
-        <div>
+        <div className='container-fluid  bg-white'>
             <div className='container-fluid '>
                 <Banner
                     textTitle='Giỏ hàng'
@@ -14,7 +21,7 @@ function Cart() {
             <div className='container mt-3'>
                 <div className='row'>
                     <div className='col-md-8 pt-3'>
-                        <table className="table table-striped">
+                        <table className="table table-striped w-100 tb_cart">
                             <thead>
                                 <tr>
                                     <th>Sản phẩm</th>
@@ -28,7 +35,7 @@ function Cart() {
                             <tbody>
                                 <tr >
                                     <td>
-                                        <img src='https://product.hstatic.net/1000271724/product/upload_6988d367d0254e8e8252636ea14b4c04_large.jpg' style={{ height: '100px' }} />
+                                        <img src='https://product.hstatic.net/1000271724/product/upload_6988d367d0254e8e8252636ea14b4c04_large.jpg' />
                                     </td>
                                     <td>Xoài cát</td>
                                     <td>50.000đ</td>
@@ -66,7 +73,7 @@ function Cart() {
                         </div>
                         <div className='d-flex align-items-center justify-content-between mt-2'>
                             <p></p>
-                            <button style={{ width: '200px', height: '50px', backgroundColor: 'green', color: '#fff', border: 'none' }}>Tiến hành đặt hàng</button>
+                            <button onClick={handleToCheckout} style={{ width: '200px', height: '50px', backgroundColor: 'green', color: '#fff', border: 'none' }}>Tiến hành đặt hàng</button>
                         </div>
                     </div>
 

@@ -14,8 +14,8 @@ const Category = () => {
                     </ul>
 
                 </li>
-                <li><NavLink to='News' activeClassName="active">Tin tức</NavLink></li>
-                <li><NavLink to='Introduce' activeClassName="active">Giới thiệu</NavLink></li>
+                <li><NavLink to='/Contact' activeClassName="active">Liên hệ</NavLink></li>
+                <li><NavLink to='/Introduce' activeClassName="active">Giới thiệu</NavLink></li>
             </ul>
         </div>
     )

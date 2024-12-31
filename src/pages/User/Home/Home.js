@@ -41,10 +41,10 @@ function Home() {
             <div className='image-container fade-in'>
 
             </div>
-            <div className='pt-3 container fade-in'>
+            <div className='pt-md-3 pt-1 container fade-in'>
                 {/* about us */}
                 <div className='row align-items-center justify-content-center'>
-                    <div className='col-md-6' style={{ position: 'relative' }}>
+                    <div className='col-md-6 col-12' style={{ position: 'relative' }}>
                         <div>
                             <div style={{ borderTop: '5px solid #f15f2a', width: '30px', position: 'absolute', top: '13px' }}></div>
                             <h3 style={{ color: "green", fontFamily: 'Arial, sans-serif', marginLeft: '35px' }}>About uS</h3>
@@ -59,13 +59,13 @@ function Home() {
                             trên thương trường thế giới.
                         </p>
                     </div>
-                    <div className='col-md-6'>
-                        <img src='https://free.vector6.com/wp-content/uploads/2021/05/PNG-0000002202-png-bong-lua.png' />
+                    <div className='col-md-6 col-12'>
+                        <img className='w-100' src='https://free.vector6.com/wp-content/uploads/2021/05/PNG-0000002202-png-bong-lua.png' />
                     </div>
 
                 </div>
                 {/*  */}
-                <div className='d-flex  justify-content-center position-relative fade-in'>
+                <div className='d-md-flex d-none justify-content-center position-relative fade-in'>
                     <div>
                         <img src='https://ingenioushubs.com/petuk/demo/images/05.png' style={{ width: '200px', position: 'absolute', left: '43%', top: '-20%' }} />
                         <div className='row d-flex align-items-center justify-content-center' style={{ width: '1000px', height: '330px', background: 'rgba(240, 84, 86, .2)', borderRadius: '150px' }}>
@@ -100,7 +100,7 @@ function Home() {
                 <div className='mt-5 fade-in'>
                     <h4 style={{ fontStyle: 'italic', textAlign: 'center', color: "green" }}>Our Menu</h4>
                     <div className='position-relative text-center'>
-                        <div style={{ borderTop: '5px solid #f15f2a', width: '35px', position: 'absolute', left: '37%', bottom: '48%' }}></div>
+                        <div className='d-none d-md-block' style={{ borderTop: '5px solid #f15f2a', width: '35px', position: 'absolute', left: '37%', bottom: '48%' }}></div>
                         <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '30px' }}>Choose food items</p>
                     </div>
                     <div>
@@ -137,10 +137,10 @@ function Home() {
                                 // opacity: selectedCategory === 'gao' ? 1 : 0,
                                 // transition: 'opacity 1s ease-in-out',
                             }}>
-                            <div className='col-md-6'>
-                                <img style={{ marginLeft: '20%', width: '400px', height: '400px' }} src='https://gaodacsansoctrang.com/public/files/category/picture/home-about-625ba5bee2eab.png' />
+                            <div className='col-md-5'>
+                                <img style={{ width: '400px', height: '400px' }} src='https://gaodacsansoctrang.com/public/files/category/picture/home-about-625ba5bee2eab.png' />
                             </div>
-                            <div className='col-md-6'>
+                            <div className='col-md-7'>
                                 <div >
                                     <div className='row'>
                                         <div className='col-md-6'>
@@ -185,10 +185,10 @@ function Home() {
 
                         </div>
                         <div id='raucu' className='row product-container' style={{ display: selectedCategory === 'raucu' ? 'flex' : 'none' }}>
-                            <div className='col-md-6'>
-                                <img style={{ marginLeft: '20%' }} src='https://salt.tikicdn.com/ts/category/4f/44/33/78bc1f2813121603fd8705dd477c223a.png' />
+                            <div className='col-md-5'>
+                                <img style={{}} src='https://salt.tikicdn.com/ts/category/4f/44/33/78bc1f2813121603fd8705dd477c223a.png' />
                             </div>
-                            <div className='col-md-6'>
+                            <div className='col-md-7'>
                                 <div >
                                     <div className='row'>
                                         <div className='col-md-6'>
@@ -234,10 +234,10 @@ function Home() {
 
                         </div>
                         <div id='combo' className='row product-container' style={{ display: selectedCategory === 'combo' ? 'flex' : 'none' }}>
-                            <div className='col-md-6'>
-                                <img style={{ marginLeft: '20%', width: '400px' }} src='https://files.oaiusercontent.com/file-N3RBdFp5HmRtToNMDNSc1g?se=2024-12-20T08%3A36%3A16Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3e0d4dc4-ec7d-4c55-a21c-b25b488b8e8b.webp&sig=2cB2XM6mVbA4wAIvAepd6%2B9XWRmf7SSlShY3CDEwiWo%3D' />
+                            <div className='col-md-5'>
+                                <img style={{ width: '400px' }} src='https://files.oaiusercontent.com/file-N3RBdFp5HmRtToNMDNSc1g?se=2024-12-20T08%3A36%3A16Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3e0d4dc4-ec7d-4c55-a21c-b25b488b8e8b.webp&sig=2cB2XM6mVbA4wAIvAepd6%2B9XWRmf7SSlShY3CDEwiWo%3D' />
                             </div>
-                            <div className='col-md-6'>
+                            <div className='col-md-7'>
                                 <div >
                                     <div className='row'>
                                         <div className='col-md-6'>
@@ -292,7 +292,7 @@ function Home() {
             {/*  */}
             <div className='fade-in container-fluid mt-4 '>
                 <div className='row'>
-                    <div className='col-md-4'>
+                    <div className='col-md-4 mt-2'>
                         <BackgroundSection
                             imageUrl={imageUrl1}
                             buttonText="Mua ngay"
@@ -300,14 +300,14 @@ function Home() {
                         />
 
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-md-4 mt-2'>
                         <BackgroundSection
                             imageUrl={imageUrl2}
                             buttonText="Xem thêm"
                             textContent="Bữa ăn healthy" />
 
                     </div>
-                    <div className='col-md-4'>
+                    <div className='col-md-4 mt-2'>
                         <BackgroundSection
                             imageUrl={imageUrl3}
                             buttonText="Xem thêm"
@@ -337,7 +337,7 @@ function Home() {
 
                 </div>
                 <div className='col-md-4'>
-                    <img src='https://at10.mediawz.com/wp-content/uploads/2019/06/hab_center_img.jpg' />
+                    <img className='w-100' src='https://at10.mediawz.com/wp-content/uploads/2019/06/hab_center_img.jpg' />
                 </div>
                 <div className='col-md-4 d-flex flex-column align-items-start justify-content-center'>
                     <div className='col-md-6'>

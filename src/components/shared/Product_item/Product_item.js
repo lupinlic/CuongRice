@@ -30,7 +30,7 @@ const Product_item = ({ productImg, productName, productPrice }) => {
                 <img src={productImg} className='w-100' />
                 <div className="hover-actions ">
                     <button title='Thêm vào giỏ hàng' onClick={handleAddToCart} style={{ borderRadius: '30px', backgroundColor: '#037918', color: '#fff', border: 'none', width: '120px', height: '30px', marginRight: '8px' }}>Thêm vào giỏ</button>
-                    <button title='Xem nhanh' onClick={() => openForm()} style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', margin: '0 8px' }}><i class="fas fa-search "></i></button>
+                    <button className='d-none d-md-block' title='Xem nhanh' onClick={() => openForm()} style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', margin: '0 8px' }}><i class="fas fa-search "></i></button>
 
                     <Link to='/Product_details'><button title='Xem chi tiết' style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', marginLeft: '8px' }}><i class="fas fa-eye"></i></button></Link>
                 </div>

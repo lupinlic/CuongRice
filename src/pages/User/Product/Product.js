@@ -77,7 +77,7 @@ function Product() {
 
                         </div>
                         <div className='col-md-10'>
-                            <img src='https://theme.hstatic.net/1000271724/1000376256/14/banner_collection.jpg?v=88' style={{ width: '100%' }} />
+                            <img className="d-none d-md-block" src='https://theme.hstatic.net/1000271724/1000376256/14/banner_collection.jpg?v=88' style={{ width: '100%' }} />
                             <div className='row mt-3'>
                                 <div className='col-md-8'>
                                     <h5>Tất cả sản phẩm</h5>
@@ -108,7 +108,7 @@ function Product() {
                                         <img src='https://product.hstatic.net/1000271724/product/upload_6988d367d0254e8e8252636ea14b4c04_large.jpg' className='w-100' />
                                         <div className="hover-actions ">
                                             <button title='Thêm vào giỏ hàng' onClick={handleAddToCart} style={{ borderRadius: '30px', backgroundColor: '#037918', color: '#fff', border: 'none', width: '120px', height: '30px', marginRight: '8px' }}>Thêm vào giỏ</button>
-                                            <button title='Xem nhanh' onClick={() => openForm()} style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', margin: '0 8px' }}><i class="fas fa-search "></i></button>
+                                            <button className="d-none d-md-block" title='Xem nhanh' onClick={() => openForm()} style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', margin: '0 8px' }}><i class="fas fa-search "></i></button>
 
                                             <Link to='/Product_details'><button title='Xem chi tiết' style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', marginLeft: '8px' }}><i class="fas fa-eye"></i></button></Link>
                                         </div>
@@ -119,7 +119,7 @@ function Product() {
                                 <div className='col-md-4 '>
                                     <div className=' w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-white new-child product-card'>
                                         <img src='https://product.hstatic.net/1000271724/product/upload_fdd84c27439a406680b755a4051d1093_large.jpg' className='w-100' />
-                                        <div className="hover-actions ">
+                                        <div className="hover-actions">
                                             <button title='Thêm vào giỏ hàng' onClick={handleAddToCart} style={{ borderRadius: '30px', backgroundColor: '#037918', color: '#fff', border: 'none', width: '120px', height: '30px', marginRight: '8px' }}>Thêm vào giỏ</button>
                                             <button title='Xem nhanh' style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', margin: '0 8px' }}><i class="fas fa-search "></i></button>
                                             <button title='Xem chi tiết' style={{ borderRadius: '50%', backgroundColor: '#037918', color: '#fff', border: 'none', height: '30px', width: '30px', marginLeft: '8px' }}><i class="fas fa-eye"></i></button>
